@@ -1,0 +1,69 @@
+/* Quitar todo el margen se indica con el asterisco */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.hero-image{
+    margin: 0;
+   
+}
+
+.hero-image img{
+    object-fit: contain;
+    width: 100%;
+}
+
+h1{
+    color: red;
+}
+
+.dishes{
+    display: grid;
+    /* Repeat representa un fragmento repetido */
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)) ;  
+    /* minmax ayuda a celarar el tamaño minimo para ancho y alto de mi celda */
+    grid-template-rows: repeat(2,minmax(150px,1fr));
+    column-gap: 50px ; /* Espaciado entre imagenes */
+    row-gap: 50px;
+}
+
+.dishes-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.video-big{
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.plates{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    column-gap: 20px;
+}
+
+.plates-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dishes-image:hover{
+background-color: rgb(233, 171, 171);
+}
+

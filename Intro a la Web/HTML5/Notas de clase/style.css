@@ -1,0 +1,35 @@
+h1 {
+    color: blue;
+    font-family: 'Belanosima', sans-serif;
+    text-align: center;
+}
+h3 {
+    color: bisque;
+}
+
+/* Selector de tipo clase y lleva punto */
+.class-section{
+    background-color: beige;
+    font-size: 10px;
+}
+
+/* Selector de tipo id, se pone un # */
+
+#Special-Title{
+    color: cornflowerblue;
+    font-size: 38px;
+}
+
+/* Selector avanzado */
+
+.mi-articulo .lista-desordenada li{
+    color: blueviolet;
+    font-size: 18px;
+    background-color: burlywood;
+}
+
+.hijo{
+    background-color: pink;
+    width: 300px;
+    margin: auto;
+}

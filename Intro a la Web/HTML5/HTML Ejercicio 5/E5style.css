@@ -1,0 +1,48 @@
+.contenedor{
+    display: grid; /* Indico comportamiento del contenedor*/
+    grid-template-columns: 400px 30px 70px 30px auto; /*Indico cuantas columnas */
+    grid-template-rows: 400px 30px 70px 30px 400px; /*Indico cuantas filas */
+    grid-template-areas: 
+    "C1 C2 C3 C4 C5"
+    "C6 C7 C3 C9 C10"
+    "C11 C11 C3 C14 C14"
+    "C16 C17 C3 C19 C20"
+    "C21 C22 C3 C24 C25";
+}
+
+.item1{
+    background-color: #ff0000;
+    grid-area: C1;
+
+}
+
+.item3{
+    background-color: rgb(16, 22, 103);
+    grid-area: C3;
+}
+
+.item5{
+    background-color: #ff0000;
+    grid-area: C5;
+}
+.item6{
+    background-color: #ff0000;
+    grid-area: C21;
+}
+
+.item7{
+    background-color: rgb(16, 22, 103);
+    grid-area: C14;
+}
+
+.item8{
+    background-color: rgb(16, 22, 103);
+    grid-area: C11;
+}
+
+.item10{
+    background-color: #ff0000;
+    grid-area: C25;
+}
+
+
