@@ -22,21 +22,25 @@ body{
     
     margin-bottom: 10px;
     float: left;
+
+    width: 100%;
+    box-sizing: border-box;
   
 }
 
 .mediano{
-    
-    width: 830px;
+    width: 50%;
+    /* width: 830px; */
     height: 200px;
     float: left;
     /* display: inline-block; */
+    box-sizing: border-box;
     
 }
 
 .margin-derecho{
     
-    margin-right: 10px;
+     margin-right: 10px; 
     
 }
 
