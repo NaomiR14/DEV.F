@@ -25,3 +25,40 @@ h2{
 .profile-description{
     
 }
+
+body
+{
+    background: lightblue ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.container
+{
+ position: 100%;
+ width: 100%;
+ max-width: 100px;
+ min-height: 100px;
+ background: #fff;
+ margin: 50px;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ box-shadow: 0 35px 55px rgba(0, 0, 0, 1);
+}
+.container .left_side
+{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+
+}
+.container .right_side
+{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+
+}
