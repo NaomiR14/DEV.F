@@ -6,26 +6,26 @@
 // De amarillo puede pasar a Rojo.
 // De Verde pasa a Amarillo.
 
-document.write("<img src='verde.png' >");
-document.write("<img src='Rojo.png' >");
-document.write("<img src='Amarillo.png' >");
+// document.write("<img src='verde.png' >");
+// document.write("<img src='Rojo.png' >");
+// document.write("<img src='Amarillo.png' >");
 
-function imprimeHola() {
+const $lucesDelCirculo = document.querySelectorAll('.luces-circulo');
+let contador = 0;
 
-    console.log('Hola'); 
+const mostrar = () =>{
+    $lucesDelCirculo[contador].className = 'luces-circulo';
+    contador ++
 
+    if (contador > 2)
+    {
+        contador = 0;
+    }
+
+    const luzActual = $lucesDelCirculo[contador];
+    luzActual.classList.add(luzActual.getAttribute('color'))
 }
 
+setInterval(mostrar,2000); 
 
 
-function detente(intervalo) {
-
-    clearInterval(intervalo);
-
-    console.log('Listo!');
-
-}
-
-        var intervalo = setInterval(imprimeHola(),1000); 
-
-setTimeout(detener(intervalo),5000); 
