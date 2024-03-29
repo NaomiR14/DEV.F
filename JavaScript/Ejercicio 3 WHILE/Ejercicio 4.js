@@ -13,10 +13,10 @@ do{
 
     Array.push(Palabras);
    
-     document.write("Los numeros introducidos fueron " + Array);
+     //document.write("Los numeros introducidos fueron " + Array);
 
     
 
-}while (Palabras != null)
+}while (Palabras != "")
 
  document.write("Las palabras introducidas fueron " + Array);
